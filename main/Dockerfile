@@ -21,7 +21,7 @@ RUN apt-get install -y nginx \
     && apt-get install -y supervisor
 
 # Install python libraries and tools
-RUN apt-get install -y python-webob,python3-webob \
+RUN apt-get install -y python-webob python3-webob \
     && apt-get install -y python-gd python-imaging python-magic python-six python3-magic python3-six \
     && apt-get install -y python-crypto python3-crypto \
     && apt-get install -y poppler-utils
