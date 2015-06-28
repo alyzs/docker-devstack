@@ -13,3 +13,13 @@ RUN apt-get install -y uwsgi  \
     && apt-get install -y supervisor
 
 RUN mkdir -p /var/run/sshd
+
+RUN echo "hello"
+
+COPY supervisor /supervisor
+
+expose 80
+expose 22
+
+# Define default command.
+CMD ["supervisord", "-n", "-c", "/supervisor/supervisord.conf"]
