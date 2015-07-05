@@ -1,12 +1,21 @@
 # docker-devstack
 Development Stack
 
-A server stack containing nginx/uwsgi/sshd running inside supervisor.
+A server stack containing nginx/uwsgi/sshd.
 
-The sample scripts in /supervisor implements a hello app.
+Default version (latest):
 
-To run the sample hellp app:
+    The default version runs under s6.
 
-    docker run -p 80:80 alyz/devstack
 
-Then open http://localhost on any browser.
+Alterate Version (supervisor):
+
+    An alternate version installs and runs under supervisor.
+
+    The sample scripts in /supervisor implements a hello app.
+
+    To run the sample hellp app:
+
+        docker run -p 80:80 alyz/devstack
+
+    Then open http://localhost on any browser.
