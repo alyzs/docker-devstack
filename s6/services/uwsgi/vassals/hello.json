@@ -1,0 +1,14 @@
+{
+    "uwsgi": {
+        "uid": "www-data",
+        "gid": "www-data",
+        "xdisable-logging": true,
+        "chown-socket": "www-data:www-data",
+        "plugins": "python",
+        "socket": ":8080",
+        "wsgi-file": "/etc/services.d/uwsgi/wsgi/hello.wsgi",
+
+        "workers": 4,
+        "threads": 2
+    }
+}

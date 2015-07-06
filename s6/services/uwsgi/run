@@ -1,0 +1,2 @@
+#!/usr/bin/execlineb -P
+/usr/bin/uwsgi --emperor /etc/services.d/uwsgi/vassals --logto /var/log/uwsgi/app/uwsgi.log
