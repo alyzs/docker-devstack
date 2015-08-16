@@ -20,7 +20,8 @@ expose 80
 expose 22
 
 # set entrypoint to a passthru command
-ENTRYPOINT [ "/usr/local/bbin/nice", "-0" ]
+# ENTRYPOINT [ "/usr/local/bbin/nice", "-0" ]
+ENTRYPOINT [ "/usr/local/bin/spawnvp" ]
 
 # Define default command.
 CMD ["supervisord", "-n", "-c", "/supervisor/supervisord.conf"]
