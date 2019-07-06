@@ -3,7 +3,7 @@
 #
 
 # Pull base image.
-FROM alyz/devenv
+FROM alyz/devenv:20170710
 
 # Install uwsgi nginx sshd
 RUN apt-get install -y uwsgi  \
