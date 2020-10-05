@@ -6,6 +6,8 @@
 FROM alyz/devenv:buster
 
 # Install uwsgi nginx sshd
+RUN apt-get update
+
 RUN apt-get install -y uwsgi  \
     && apt-get install -y uwsgi-plugin-python uwsgi-plugin-python3 \
     && apt-get install -y nginx \
